@@ -1,0 +1,11 @@
+// Smooth scroll to Branch section
+function scrollToBranches() {
+    document.getElementById("branches").scrollIntoView({ behavior: "smooth" });
+}
+
+// Example JS logic for interactivity (you can expand later)
+document.querySelectorAll(".branch-card").forEach(card => {
+    card.addEventListener("click", () => {
+        alert(You selected ${card.textContent} branch! (Coming Soon...));
+    });
+});
